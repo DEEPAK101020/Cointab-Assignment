@@ -5,7 +5,8 @@ The objective of this project is to create a system that facilitates the managem
 ## Project Type
 | Fullstack |
 ## Deplolyed App
-Frontend: - [Live Link](https://code-genius-l4ji.vercel.app/)
+Frontend: - [Live Link](cointab-assignment-mdeiecglb-deepak101020s-projects.vercel.app)
+backend:  - [Live Link](https://cointab-assignment-qdjf.onrender.com/)
 
 ## Directory Structure
 ```
