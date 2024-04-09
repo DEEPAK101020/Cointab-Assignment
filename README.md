@@ -1,11 +1,11 @@
-
 #About
+
 The objective of this project is to create a system that facilitates the management of users, their posts, and generates reports in Excel format containing all the posts of each user.
 
 ## Project Type
 | Fullstack |
 ## Deplolyed App
-Frontend: - [Live Link](cointab-assignment-mdeiecglb-deepak101020s-projects.vercel.app)
+Frontend: - [Live Link](https://cointab-assignment-lake.vercel.app/)
 backend:  - [Live Link](https://cointab-assignment-qdjf.onrender.com/)
 
 ## Directory Structure
