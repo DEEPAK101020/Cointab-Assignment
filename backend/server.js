@@ -1,13 +1,15 @@
 const express = require("express")
 const cors = require("cors");
 const sequelize = require("./db");
-const {UserRouter}=require("./routes/userRoutes")
+const {UserRouter}=require("./routes/userRoutes");
+const { PostRoute } = require("./routes/postRoutes");
 
 const app = express();
 app.use(cors())
 app.use(express.json())
 
 app.use("/user",UserRouter)
+app.use("/post",PostRoute)
 app.get("/",(req,res)=>{
     res.send("Home")
 })

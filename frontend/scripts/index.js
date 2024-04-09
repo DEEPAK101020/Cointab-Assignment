@@ -60,6 +60,7 @@ alluser.addEventListener("click",()=>{
     openBtn.innerText = "OPEN";
     openBtn.addEventListener("click",()=>{
       localStorage.setItem("userId",userData.id);
+      localStorage.setItem("username",userData.name);
       localStorage.setItem("company", userData.company.name)
   
       window.location.href = "./post.html";

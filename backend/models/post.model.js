@@ -1,7 +1,7 @@
 const {DataTypes} = require("sequelize")
 const sequelize = require("../db")
 
-const post = sequelize.define("Post", {
+const postmodel = sequelize.define("post", {
     id:{
         type:DataTypes.INTEGER,
         primaryKey: true,
@@ -16,8 +16,10 @@ const post = sequelize.define("Post", {
     body:{
         type:DataTypes.TEXT
     }
+},{
+    timestamps:false
 })
 
 module.exports = {
-    post
+    postmodel
 }
