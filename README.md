@@ -1,8 +1,6 @@
-# About Future Map
 
-About
-Future Map is your ultimate guide to navigating the educational journey ahead. Whether you're a high school student exploring career paths, a college graduate planning your next steps.
-
+#About
+The objective of this project is to create a system that facilitates the management of users, their posts, and generates reports in Excel format containing all the posts of each user.
 
 ## Project Type
 | Fullstack |
