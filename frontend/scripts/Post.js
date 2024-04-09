@@ -33,11 +33,12 @@ async function fetchData(){
 
         downloadbtn.setAttribute("id","excel")
         downloadbtn.innerText="Download in excel"
+        
         downloadbtn.addEventListener("click",async ()=>{
             try {
                 const response = await fetch(`http://localhost:3000/post/download/${userId}`);
-                const blob = await response.blob();
-                const blobUrl = window.URL.createObjectURL(blob);
+                const userbyId = await response.blob();
+                const blobUrl = window.URL.createObjectURL(userbyId);
             
                 const link = document.createElement('a');
                 link.href = blobUrl;
