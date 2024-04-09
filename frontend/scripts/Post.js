@@ -13,7 +13,7 @@ CompanyName.innerText=company
 let container = document.getElementById("container");
 async function fetchData(){
     try {
-        let response = await fetch(`http://localhost:3000/post?userId=${userId}`)
+        let response = await fetch(`https://cointab-assignment-qdjf.onrender.com/post?userId=${userId}`)
         let data = await response.json();
         let posts = data.response;
         // console.log(data.msg);
@@ -36,7 +36,7 @@ async function fetchData(){
         
         downloadbtn.addEventListener("click",async ()=>{
             try {
-                const response = await fetch(`http://localhost:3000/post/download/${userId}`);
+                const response = await fetch(`https://cointab-assignment-qdjf.onrender.com/post/download/${userId}`);
                 const userbyId = await response.blob();
                 const blobUrl = window.URL.createObjectURL(userbyId);
             
@@ -83,7 +83,7 @@ function createCard(item){
 
 async function bulkAdd(posts){
     try {
-        let res = await fetch(`http://localhost:3000/post`,{
+        let res = await fetch(`https://cointab-assignment-qdjf.onrender.com/post`,{
             method:"POST",
             headers:{
                 "Content-Type": "application/json"
