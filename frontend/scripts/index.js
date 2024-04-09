@@ -9,7 +9,7 @@ alluser.addEventListener("click",()=>{
  async function fetchUserData() {
     try {
         appContainer.innerHTML="";
-      const response = await fetch('http://localhost:3000/user/');
+      const response = await fetch('https://cointab-assignment-qdjf.onrender.com/user/');
       const data = await response.json();
       return data;
     } catch (error) {
@@ -90,7 +90,7 @@ alluser.addEventListener("click",()=>{
 
   async function addData(userData) {
     try {
-      let res = await fetch("http://localhost:3000/user/", {
+      let res = await fetch("https://cointab-assignment-qdjf.onrender.com/user/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
