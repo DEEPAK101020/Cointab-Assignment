@@ -38,6 +38,6 @@ Detailed instructions on how to install, configure, and get the project running.
 - Frontend:  HTML,CSS,JavaScript 
 - Backend: Node.js, Express.js
 - Database: SQL
-- Deployment: render and vercel for backend andfrontend
+- Deployment: backend on render and frontend on vercel
 
   
