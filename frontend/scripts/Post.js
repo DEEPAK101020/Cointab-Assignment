@@ -14,6 +14,9 @@ CompanyName.innerText=company
 let container = document.getElementById("container");
 async function fetchData(){
     try {
+        container.innerHTML = "";
+        container.innerHTML="Loading Post Data please wait...."
+        container.style.color="red";
         let response = await fetch(`https://cointab-assignment-qdjf.onrender.com/post?userId=${userId}`)
         let data = await response.json();
         let posts = data.response;
@@ -21,6 +24,8 @@ async function fetchData(){
         let msginfo = data.msg
         // console.log(msginfo)
         container.innerHTML = "";
+        container.style.color="black";
+  
         let bulkbtn = document.createElement("button")
         bulkbtn.setAttribute("id","bulk-add")
         bulkbtn.innerText="Bulk Add"
