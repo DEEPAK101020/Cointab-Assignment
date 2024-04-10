@@ -40,4 +40,20 @@ Detailed instructions on how to install, configure, and get the project running.
 - Database: SQL
 - Deployment: backend on render and frontend on vercel
 
+## npm packages used:
+
+express
+
+cors
+
+dotenv
+
+sequelize
+
+exceljs
+
+mysql2
+
+axios
+
   
