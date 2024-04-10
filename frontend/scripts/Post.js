@@ -3,6 +3,7 @@ let userId = localStorage.getItem("userId");
 let company = localStorage.getItem("company");
 let username = localStorage.getItem("username");
 
+let btncontainer=document.getElementById("btncontainer")
 //creating
 let userName = document.getElementById("username");
 userName.innerText=username
@@ -50,11 +51,15 @@ async function fetchData(){
                 console.error('Error downloading file:', error);
               }
         })
+        
         if(msginfo == "unable to add data internal server error"){
-        container.append(bulkbtn)
+        btncontainer.appendChild(bulkbtn)
+        
         }
         else{
-        container.append(downloadbtn)
+        btncontainer.innerHTML=""
+        btncontainer.appendChild(downloadbtn)
+        
         }
         posts.forEach(item =>{
             let cards = createCard(item)
