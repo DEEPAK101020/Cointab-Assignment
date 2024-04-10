@@ -9,7 +9,12 @@ alluser.addEventListener("click",()=>{
  async function fetchUserData() {
     try {
         appContainer.innerHTML="";
+        appContainer.innerHTML="Loading user Data please wait...."
+        appContainer.style.color="red";
+        appContainer.style.textAlign="center"
       const response = await fetch('https://cointab-assignment-qdjf.onrender.com/user/');
+      appContainer.innerHTML=""
+      appContainer.style.color="black";
       const data = await response.json();
       return data;
     } catch (error) {
